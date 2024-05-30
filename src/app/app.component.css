@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+* {
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: #05090c;
+}
+  
+
+.list-order {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+.list-order > li {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    align-items: center;
+}
+
+li > a {
+    text-decoration: none;
+}
+
+h1{
+    text-align: center;
+}
+
+.imagen {
+    filter: sepia(100%) saturate(100%) hue-rotate(20deg);
+}

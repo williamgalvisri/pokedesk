@@ -1,0 +1,12 @@
+<h1>
+    Pokédesk
+</h1>
+
+<ul class="list-order">
+    @for (item of (pokemons$|async); track $index) {
+        <li>
+            <img class="imagen" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/{{ $index + 1 }}.png" [alt]="item.name">
+            <a [href]="item.url">{{ item.name }}</a>
+        </li>
+    }
+</ul>
